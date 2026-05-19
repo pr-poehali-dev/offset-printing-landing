@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 const PRESS_IMG = "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/d2909581-bfe0-4dcf-8557-8f140c57a6e8.jpg";
 const MATERIALS_IMG = "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/0ca40e45-c634-4c66-a954-ea438f94f18f.jpg";
 const CATALOGS_IMG = "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/21bd82c3-cb6e-402f-a981-41aada75e978.jpg";
-const LOGO_IMG = "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/bucket/dcf383f2-1002-4ff2-adb3-505e58557bd1.png";
+const LOGO_IMG = "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/bucket/c3e463db-8377-41e7-ab87-ed9c7fe0713f.png";
 
 const GALLERY_IMGS = [
   { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/e03f7d83-e6f5-404f-b62a-66598e7263d7.jpg", label: "Каталог" },
