@@ -227,11 +227,12 @@ export default function Index() {
         </div>
 
         {/* Main nav */}
-        <div className="max-w-7xl mx-auto px-4 lg:px-6 h-14 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 flex-shrink-0">
-            <img src={LOGO_IMG} alt="ПК Запад" className="h-9 w-auto object-contain" />
-            <div className="hidden lg:block text-xs leading-snug" style={{ color: "var(--c-ink3)", maxWidth: 170 }}>
-              Надёжная офсетная типография<br />полного цикла в Москве.<br />
+        <div className="max-w-7xl mx-auto px-3 lg:px-6 h-14 flex items-center justify-between gap-2">
+          {/* Logo + descriptor */}
+          <div className="flex items-center gap-2 flex-shrink-0 min-w-0">
+            <img src={LOGO_IMG} alt="ПК Запад" className="h-9 w-auto object-contain flex-shrink-0" />
+            <div className="hidden lg:block text-xs leading-snug" style={{ color: "var(--c-ink3)", maxWidth: 200 }}>
+              Надёжная офсетная типография полного цикла в Москве.<br />
               <span style={{ color: "var(--c-blue)" }}>Работаем по всей России</span>
             </div>
           </div>
@@ -247,9 +248,9 @@ export default function Index() {
           </nav>
 
           <div className="flex items-center gap-2 flex-shrink-0">
-            <a href="tel:+74952521206" className="hidden md:flex flex-col items-end">
-              <span className="font-bold text-sm leading-tight display-font" style={{ color: "var(--c-blue)" }}>8 (495) 521-42-06</span>
-              <span className="text-xs" style={{ color: "var(--c-ink3)" }}>Перезвоним за 1 час</span>
+            {/* Телефон — виден на мобильном, скрыт на xl где есть nav */}
+            <a href="tel:+74952521206" className="xl:hidden flex flex-col items-end">
+              <span className="font-bold display-font leading-tight" style={{ fontSize: "0.8rem", color: "var(--c-blue)" }}>8 (495) 521-42-06</span>
             </a>
             <button onClick={openCb} className="btn-green px-3 py-2 text-xs hidden md:block">Перезвоните мне</button>
             <button className="xl:hidden p-1.5" onClick={() => setMenuOpen(!menuOpen)}>
@@ -273,7 +274,7 @@ export default function Index() {
       </header>
 
       {/* TICKER */}
-      <div className="overflow-hidden" style={{ background: "var(--c-blue)", paddingTop: "calc(56px + 28px)" }}>
+      <div className="overflow-hidden ticker-spacer" style={{ background: "var(--c-blue)" }} id="ticker">
         <div className="flex py-2" style={{ width: "max-content", animation: "marquee 25s linear infinite" }}>
           {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
             <span key={i} className="text-white text-xs font-semibold mx-6 tracking-widest display-font whitespace-nowrap">
@@ -292,9 +293,9 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-12 grid lg:grid-cols-2 gap-6 lg:gap-10 items-start">
           {/* Left */}
           <div>
-            <h1 className="display-font font-bold leading-tight mb-4" style={{ fontSize: "clamp(1.65rem, 3.8vw, 2.8rem)", color: "var(--c-ink)" }}>
+            <h1 className="display-font font-bold leading-tight mb-4" style={{ fontSize: "clamp(1.4rem, 2.9vw, 2.25rem)", color: "var(--c-ink)" }}>
               Печать каталогов, брошюр и буклетов<br />
-              <span style={{ color: "var(--c-blue)" }}>тиражей от 500 ед. за 5 дней в Москве</span><br />
+              от <span style={{ color: "var(--c-blue)" }}>500</span> ед. за <span style={{ color: "var(--c-blue)" }}>5 дней</span> в Москве<br />
               с контролем качества на каждом листе
             </h1>
 

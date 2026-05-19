@@ -273,6 +273,16 @@
   font-weight: 600;
 }
 
+/* Ticker spacer: mobile = only nav 56px, desktop = nav 56px + topbar ~28px */
+.ticker-spacer {
+  padding-top: 56px;
+}
+@media (min-width: 768px) {
+  .ticker-spacer {
+    padding-top: calc(56px + 28px);
+  }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
