@@ -85,7 +85,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "PT Sans", sans-serif;
     color: var(--c-ink);
     background: var(--c-bg);
   }
@@ -153,13 +153,16 @@
 }
 
 .display-font {
+  font-family: "Playfair Display", serif;
+}
+.nav-font {
   font-family: "Oswald", sans-serif;
 }
 
 .btn-green {
   background: var(--c-green);
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "PT Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -179,7 +182,7 @@
   border: 2px solid var(--c-blue);
   color: var(--c-blue);
   background: transparent;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "PT Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -194,7 +197,7 @@
 .btn-blue {
   background: var(--c-blue);
   color: #fff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "PT Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -240,7 +243,7 @@
   background: #fff;
   outline: none;
   transition: border-color 0.2s;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 .inp:focus {
   border-color: var(--c-blue);

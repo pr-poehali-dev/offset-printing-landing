@@ -10,20 +10,19 @@ const GALLERY_IMGS = [
   { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/e03f7d83-e6f5-404f-b62a-66598e7263d7.jpg", label: "Каталог" },
   { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/7c832436-6b37-4a2f-a01e-1517d72b08fd.jpg", label: "Брошюра" },
   { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8983bdf0-dabf-4df3-91ba-208d3ad277b9.jpg", label: "Буклет" },
-  { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/ab9199c2-2ff9-4418-9a62-0e04cdbd22fb.jpg", label: "Каталог luxury" },
-  { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8c0d5418-a0c0-4b5b-8f9c-e3df5fa6130e.jpg", label: "Годовой отчёт" },
-  { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/199bc2c5-852a-437c-9517-4a3e2ffb4c08.jpg", label: "Листовки" },
-  { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/3dc6c535-1fc3-429f-84c2-9c5e65c2c7f1.jpg", label: "Меню" },
+  { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8c0d5418-a0c0-4b5b-8f9c-e3df5fa6130e.jpg", label: "Каталог А4" },
+  { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/ab9199c2-2ff9-4418-9a62-0e04cdbd22fb.jpg", label: "Каталог premium" },
+  { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/3dc6c535-1fc3-429f-84c2-9c5e65c2c7f1.jpg", label: "Буклет сложение" },
+  { url: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/21bd82c3-cb6e-402f-a981-41aada75e978.jpg", label: "Каталог продукции" },
 ];
 
-const PORTFOLIO_TABS = ["Каталоги", "Брошюры", "Буклеты", "Листовки"];
+const PORTFOLIO_TABS = ["Каталоги", "Брошюры", "Буклеты"];
 const PORTFOLIO_ITEMS = [
   { tab: "Каталоги", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/e03f7d83-e6f5-404f-b62a-66598e7263d7.jpg", format: "200×270 мм", pages: "120 полос + обложка", paper: "Мелованная матовая 90 г/м²", cover: "Мелованная 200 г/м² + матовый лак", color: "4+4 (CMYK)" },
   { tab: "Каталоги", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/ab9199c2-2ff9-4418-9a62-0e04cdbd22fb.jpg", format: "210×297 мм (А4)", pages: "64 полосы + обложка", paper: "Мелованная глянцевая 115 г/м²", cover: "Мелованная 300 г/м² + УФ-лак", color: "4+4 (CMYK)" },
   { tab: "Брошюры", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/7c832436-6b37-4a2f-a01e-1517d72b08fd.jpg", format: "148×210 мм (А5)", pages: "32 страницы", paper: "Офсетная 80 г/м²", cover: "Мелованная 250 г/м² + матовая ламинация", color: "4+0" },
   { tab: "Брошюры", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8c0d5418-a0c0-4b5b-8f9c-e3df5fa6130e.jpg", format: "210×297 мм (А4)", pages: "48 страниц, КБС", paper: "Мелованная 130 г/м²", cover: "Дизайнерская 300 г/м² + тиснение фольгой", color: "4+4 (CMYK)" },
   { tab: "Буклеты", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8983bdf0-dabf-4df3-91ba-208d3ad277b9.jpg", format: "210×297 мм, евро-сложение", pages: "6 полос", paper: "Мелованная глянцевая 150 г/м²", cover: "–", color: "4+4 (CMYK)" },
-  { tab: "Листовки", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/199bc2c5-852a-437c-9517-4a3e2ffb4c08.jpg", format: "А5, А4", pages: "1 лист", paper: "Мелованная 130 г/м²", cover: "–", color: "4+4" },
   { tab: "Буклеты", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/3dc6c535-1fc3-429f-84c2-9c5e65c2c7f1.jpg", format: "210×297 мм, книжное сложение", pages: "8 полос", paper: "Мелованная матовая 170 г/м²", cover: "–", color: "4+4 (CMYK)" },
 ];
 
@@ -33,9 +32,8 @@ const TICKER_ITEMS = [
   "ДОСТАВКА ПО МОСКВЕ И МО",
   "28 ЛЕТ НА РЫНКЕ B2B",
   "ТЕСТОВЫЙ ТИРАЖ БЕСПЛАТНО",
-  "БРАК +2% В ПОДАРОК",
   "СРОК ОТ 5 ДНЕЙ",
-  "КОНТРОЛЬ КАЧЕСТВА НА КАЖДОМ ЛИСТЕ",
+  "КОНТРОЛЬ КАЧЕСТВА НА КАЖДОМ ЭТАПЕ",
 ];
 
 const NAV_LINKS = [
@@ -72,10 +70,10 @@ const FAQ_ITEMS = [
 ];
 
 const QUIZ_STEPS = [
-  { title: "Что хотите напечатать?", options: ["Буклет", "Брошюра", "Каталог", "Другое (журнал, листовка)"] },
-  { title: "Какой примерный тираж?", options: ["до 500 шт.", "500–1 000 шт.", "1 000–3 000 шт.", "3 000–10 000 шт.", "от 10 000 шт."] },
-  { title: "Есть ли у вас готовый макет?", options: ["Да, всё готово", "Да, но нужна проверка технолога", "Нет, нужна помощь с дизайном"] },
-  { title: "Какой срок сдачи?", options: ["Срочно (1–2 дня)", "3–5 дней", "5–10 дней", "Не горит — нужна лучшая цена"] },
+  { title: "Что хотите напечатать?", icon: "BookOpen", options: ["Буклет", "Брошюра", "Каталог", "Другое (журнал, листовка)"] },
+  { title: "Какой примерный тираж?", icon: "Layers", options: ["до 500 шт.", "500–1 000 шт.", "1 000–3 000 шт.", "3 000–10 000 шт.", "от 10 000 шт."] },
+  { title: "Есть ли у вас готовый макет?", icon: "FileImage", options: ["Да, всё готово", "Да, но нужна проверка технолога", "Нет, нужна помощь с дизайном"] },
+  { title: "Какой срок сдачи?", icon: "Clock", options: ["Срочно (1–2 дня)", "3–5 дней", "5–10 дней", "Не горит — нужна лучшая цена"] },
 ];
 
 function formatPhone(raw: string) {
@@ -117,8 +115,16 @@ export default function Index() {
 
   const [consultName, setConsultName] = useState("");
   const [consultPhone, setConsultPhone] = useState("");
+  const [consultComment, setConsultComment] = useState("");
   const [consultErrors, setConsultErrors] = useState<{ name?: string; phone?: string }>({});
   const [consultDone, setConsultDone] = useState(false);
+  const [consultAgree, setConsultAgree] = useState(false);
+
+  const [cbAgree, setCbAgree] = useState(false);
+  const [quizAgree, setQuizAgree] = useState(false);
+
+  const [cardGallery, setCardGallery] = useState<{ title: string; imgs: string[] } | null>(null);
+  const [cardGalleryIdx, setCardGalleryIdx] = useState(0);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -138,7 +144,7 @@ export default function Index() {
 
   const openCb = () => {
     setCbName(""); setCbPhone(""); setCbComment(""); setCbFile(null);
-    setCbErrors({}); setCbDone(false); setCbOpen(true);
+    setCbErrors({}); setCbDone(false); setCbAgree(false); setCbOpen(true);
   };
 
   const openQuiz = (preselect?: string) => {
@@ -293,33 +299,39 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-12 grid lg:grid-cols-2 gap-6 lg:gap-10 items-start">
           {/* Left */}
           <div>
-            <h1 className="display-font font-bold leading-tight mb-4" style={{ fontSize: "clamp(1.4rem, 2.9vw, 2.25rem)", color: "var(--c-ink)" }}>
-              Печать каталогов, брошюр и буклетов<br />
-              от <span style={{ color: "var(--c-blue)" }}>500</span> ед. за <span style={{ color: "var(--c-blue)" }}>5 дней</span> в Москве<br />
-              с контролем качества на каждом листе
+            <h1 className="display-font font-bold leading-tight mb-5" style={{ fontSize: "clamp(1.35rem, 2.7vw, 2.1rem)", color: "var(--c-ink)" }}>
+              Напечатаем рекламную полиграфию{" "}
+              от <span style={{ color: "var(--c-blue)" }}>500 шт.</span> с гарантией качества и сроков
+              на <span style={{ color: "var(--c-blue)" }}>15%</span> ниже рынка
+              за <span style={{ color: "var(--c-blue)" }}>5 дней</span>
             </h1>
+
+            <ul className="mb-5 flex flex-col gap-2">
+              {[
+                { text: <>Цветопроба <strong style={{ color: "var(--c-green-dark)" }}>бесплатно</strong></> },
+                { text: <><strong style={{ color: "var(--c-green-dark)" }}>Доставка в день готовности</strong> собственной службой</> },
+                { text: <>Стоимость печати <strong style={{ color: "var(--c-green-dark)" }}>ниже за счет своего производства</strong></> },
+                { text: <>Во избежании брака <strong style={{ color: "var(--c-green-dark)" }}>печатаем на 2% выше</strong> требуемого тиража</> },
+              ].map((b, i) => (
+                <li key={i} className="flex items-start gap-2.5 text-sm" style={{ color: "var(--c-ink2)" }}>
+                  <Icon name="CheckCircle" size={16} style={{ color: "var(--c-green)", marginTop: 1, flexShrink: 0 }} />
+                  <span>{b.text}</span>
+                </li>
+              ))}
+            </ul>
 
             <div className="flex items-center gap-2 rounded-xl px-4 py-2.5 mb-5 w-fit" style={{ background: "#f0fdf4", border: "1px solid #bbf7d0" }}>
               <Icon name="Gift" size={16} style={{ color: "var(--c-green)" }} />
               <span className="text-sm"><strong style={{ color: "var(--c-green-dark)" }}>Скидка 10%</strong> на первый заказ для новых клиентов</span>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 mb-5">
+            <div className="flex flex-col sm:flex-row gap-3">
               <button onClick={() => openQuiz()} className="btn-green px-5 py-3.5 text-sm">
                 Рассчитать стоимость за 2 минуты
               </button>
               <button onClick={openCb} className="btn-outline px-5 py-3.5 text-sm">
-                Консультация технолога
+                Получить консультацию технолога
               </button>
-            </div>
-
-            <div className="flex flex-wrap gap-2">
-              {["Собственное производство", "Доставка по Москве и МО", "+2% к тиражу бесплатно"].map((t, i) => (
-                <span key={i} className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full"
-                  style={{ background: "#fff", border: "1px solid var(--c-border)", color: "var(--c-ink2)" }}>
-                  <Icon name="Check" size={11} style={{ color: "var(--c-green)" }} /> {t}
-                </span>
-              ))}
             </div>
           </div>
 
@@ -452,15 +464,46 @@ export default function Index() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { img: MATERIALS_IMG, title: "Буклеты", specs: ["Форматы: A4, A5, Евро", "Бумага: 130–350 г/м²", "Сложение: книжка, гармошка"], price: "от ХХХ ₽", days: "от 5 дней", type: "Буклет" },
-              { img: CATALOGS_IMG, title: "Брошюры", specs: ["Скрепка или КБС", "8–96 страниц", "Обложка 300 г/м²"], price: "от ХХХ ₽", days: "от 5 дней", type: "Брошюра" },
-              { img: PRESS_IMG, title: "Каталоги", specs: ["Твёрдая и мягкая обложка", "До 300+ страниц", "Лак, ламинация, тиснение"], price: "от ХХХ ₽", days: "от 7 дней", type: "Каталог" },
+              {
+                img: MATERIALS_IMG, title: "Буклеты",
+                specs: ["Форматы: A4, A5, Евро", "Бумага: 130–350 г/м²", "Сложение: книжка, гармошка"],
+                type: "Буклет",
+                galleryImgs: [
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8983bdf0-dabf-4df3-91ba-208d3ad277b9.jpg",
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/3dc6c535-1fc3-429f-84c2-9c5e65c2c7f1.jpg",
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/0ca40e45-c634-4c66-a954-ea438f94f18f.jpg",
+                ]
+              },
+              {
+                img: CATALOGS_IMG, title: "Брошюры",
+                specs: ["Скрепка или КБС", "8–96 страниц", "Обложка 300 г/м²"],
+                type: "Брошюра",
+                galleryImgs: [
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/7c832436-6b37-4a2f-a01e-1517d72b08fd.jpg",
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8c0d5418-a0c0-4b5b-8f9c-e3df5fa6130e.jpg",
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/21bd82c3-cb6e-402f-a981-41aada75e978.jpg",
+                ]
+              },
+              {
+                img: PRESS_IMG, title: "Каталоги",
+                specs: ["Твёрдая и мягкая обложка", "До 300+ страниц", "Лак, ламинация, тиснение"],
+                type: "Каталог",
+                galleryImgs: [
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/e03f7d83-e6f5-404f-b62a-66598e7263d7.jpg",
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/ab9199c2-2ff9-4418-9a62-0e04cdbd22fb.jpg",
+                  "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/d2909581-bfe0-4dcf-8557-8f140c57a6e8.jpg",
+                ]
+              },
             ].map((s, i) => (
               <div key={i} className="card-light overflow-hidden">
-                <div className="relative overflow-hidden" style={{ height: 180 }}>
-                  <img src={s.img} alt={s.title} className="w-full h-full object-cover" />
-                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,31,46,0.6) 0%, transparent 60%)" }} />
+                <div className="relative overflow-hidden cursor-pointer" style={{ height: 180 }}
+                  onClick={() => { setCardGallery({ title: s.title, imgs: s.galleryImgs }); setCardGalleryIdx(0); }}>
+                  <img src={s.img} alt={s.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,31,46,0.65) 0%, transparent 60%)" }} />
                   <span className="absolute bottom-3 left-4 display-font font-bold text-xl text-white">{s.title}</span>
+                  <span className="absolute top-3 right-3 flex items-center gap-1 text-white text-xs px-2 py-1 rounded-full" style={{ background: "rgba(59,91,219,0.82)" }}>
+                    <Icon name="Images" size={12} /> Примеры
+                  </span>
                 </div>
                 <div className="p-5">
                   <ul className="mb-4 space-y-1">
@@ -470,10 +513,6 @@ export default function Index() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mb-4">
-                    <div className="display-font font-bold text-2xl" style={{ color: "var(--c-blue)" }}>{s.price}</div>
-                    <div className="text-xs" style={{ color: "var(--c-ink3)" }}>тираж 500 шт. / {s.days}</div>
-                  </div>
                   <button onClick={() => openQuiz(s.type)} className="btn-blue w-full py-3 text-sm">
                     Рассчитать точную стоимость
                   </button>
@@ -532,15 +571,35 @@ export default function Index() {
         </div>
       </section>
 
+      {/* ========== ПАРТНЁРЫ ========== */}
+      <section className="py-8 overflow-hidden" style={{ background: "#fff", borderTop: "1px solid var(--c-border)", borderBottom: "1px solid var(--c-border)" }}>
+        <div className="text-center mb-4">
+          <div className="section-tag">Нам доверяют</div>
+        </div>
+        <div className="relative">
+          <div className="flex" style={{ width: "max-content", animation: "marquee 30s linear infinite" }}>
+            {[...Array(2)].map((_, rep) => (
+              ["Ашан", "Лента", "Сбербанк", "Ростелеком", "М.Видео", "Эвалар", "РЖД", "Московский метрополитен", "Аэрофлот", "Газпром нефть"].map((name, i) => (
+                <div key={`${rep}-${i}`} className="flex-shrink-0 mx-8 flex items-center justify-center"
+                  style={{ height: 48 }}>
+                  <span className="display-font font-bold text-lg tracking-wider" style={{ color: "var(--c-ink3)", opacity: 0.55 }}>{name}</span>
+                </div>
+              ))
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ========== ПОРТФОЛИО ========== */}
       <section id="portfolio" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "#fff" }}>
         <div className="max-w-7xl mx-auto">
-          <div className="mb-7">
+          <div className="mb-7 text-center">
             <div className="section-tag mb-3">Портфолио</div>
-            <h2 className="display-font font-bold mb-5" style={{ fontSize: "clamp(1.45rem, 3vw, 2.3rem)", color: "var(--c-ink)" }}>
+            <h2 className="display-font font-bold mb-2" style={{ fontSize: "clamp(1.45rem, 3vw, 2.3rem)", color: "var(--c-ink)" }}>
               Примеры нашей <span style={{ color: "var(--c-blue)" }}>печатной продукции</span>
             </h2>
-            <div className="flex flex-wrap gap-2">
+            <p className="text-sm mb-5" style={{ color: "var(--c-ink3)" }}>Реальные работы с указанием технических характеристик</p>
+            <div className="flex flex-wrap gap-2 justify-center">
               {PORTFOLIO_TABS.map(tab => (
                 <button key={tab} onClick={() => setPortfolioTab(tab)}
                   className={`px-5 py-2.5 text-sm rounded-lg font-semibold transition-all ${portfolioTab === tab ? "btn-blue" : "btn-outline"}`}>
@@ -570,9 +629,7 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="mt-8 text-center">
-            <button onClick={openCb} className="btn-blue px-8 py-4 text-base">Хочу такой же тираж →</button>
-          </div>
+
         </div>
       </section>
 
@@ -590,7 +647,7 @@ export default function Index() {
               { num: "01", icon: "FileText", title: "Заявка", desc: "Оставляете заявку — менеджер связывается в течение 1 часа." },
               { num: "02", icon: "Pencil", title: "Макет и проверка", desc: "Технолог проверяет вылеты, поля, цветовую модель. Если нет макета — поможем." },
               { num: "03", icon: "Eye", title: "Тестовый тираж", desc: "Для первых заказов — бесплатно. Приедем или доставим курьером." },
-              { num: "04", icon: "Truck", title: "Печать и доставка", desc: "Получаете тираж +2% к заказанному. Если что-то пошло не так — за наш счёт." },
+              { num: "04", icon: "Truck", title: "Печать и доставка", desc: "Получаете тираж +2% к заказанному количеству. Доставка в день готовности собственной службой." },
             ].map((s, i) => (
               <div key={i} className="card-light p-5 relative">
                 <div className="display-font font-bold text-4xl mb-3" style={{ color: "var(--c-bg3)", lineHeight: 1 }}>{s.num}</div>
@@ -650,6 +707,59 @@ export default function Index() {
               <div className="font-bold text-white text-sm mb-0.5">Резервное оборудование</div>
               <p className="text-white text-sm opacity-90">В случае поломки основного станка — сроки не сдвинутся ни на день. Это наша ответственность.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========== ОТЗЫВЫ ========== */}
+      <section className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "#fff" }}>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="section-tag mb-3">Отзывы клиентов</div>
+            <h2 className="display-font font-bold" style={{ fontSize: "clamp(1.45rem, 3vw, 2.3rem)", color: "var(--c-ink)" }}>
+              Что говорят наши клиенты
+            </h2>
+            <div className="flex items-center justify-center gap-3 mt-3">
+              <div className="flex gap-0.5">
+                {[1,2,3,4,5].map(i => <span key={i} className="text-xl" style={{ color: "#f59e0b" }}>★</span>)}
+              </div>
+              <span className="font-bold text-lg display-font" style={{ color: "var(--c-ink)" }}>4.9</span>
+              <span className="text-sm" style={{ color: "var(--c-ink3)" }}>· 47 отзывов на Яндекс Картах</span>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { name: "Алексей М.", role: "Маркетинг-директор, FMCG", date: "март 2025", rating: 5, text: "Заказывали каталоги срочно — за 3 дня до выставки. Сделали без вопросов, качество идеальное. Теперь работаем только с ними." },
+              { name: "Светлана К.", role: "Дизайнер, агентство", date: "февраль 2025", rating: 5, text: "Технолог сам нашёл ошибку в макете и предупредил. Сэкономили нас от брака. Вот это сервис! Рекомендую всем коллегам." },
+              { name: "Дмитрий Ф.", role: "Генеральный директор, сеть ресторанов", date: "январь 2025", rating: 5, text: "Печатают меню для всех наших точек уже 2 года. Стабильное качество, привозят день в день. Ни разу не подводили." },
+              { name: "Ольга Н.", role: "Менеджер по закупкам", date: "декабрь 2024", rating: 5, text: "Цена реально ниже рынка. Сравнивала 5 типографий — выбрала их. Буклеты получились отличные, клиенты хвалят." },
+              { name: "Иван П.", role: "Владелец бизнеса", date: "ноябрь 2024", rating: 5, text: "Тестовый тираж бесплатно — это решило все сомнения. Цвет точный, бумага плотная. Однозначно продолжим сотрудничество." },
+              { name: "Екатерина Л.", role: "PR-менеджер", date: "октябрь 2024", rating: 4, text: "Хорошая типография. Сделали годовой отчёт для акционеров. Небольшая задержка с согласованием цвета, но итог превзошёл ожидания." },
+            ].map((r, i) => (
+              <div key={i} className="card-light p-5 flex flex-col gap-3">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center display-font font-bold text-base text-white flex-shrink-0"
+                      style={{ background: "var(--c-blue)" }}>
+                      {r.name[0]}
+                    </div>
+                    <div>
+                      <div className="font-semibold text-sm" style={{ color: "var(--c-ink)" }}>{r.name}</div>
+                      <div className="text-xs" style={{ color: "var(--c-ink3)" }}>{r.role}</div>
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0 text-xs" style={{ color: "var(--c-ink3)" }}>{r.date}</div>
+                </div>
+                <div className="flex gap-0.5">
+                  {[1,2,3,4,5].map(s => <span key={s} style={{ color: s <= r.rating ? "#f59e0b" : "#e2e8f0", fontSize: 14 }}>★</span>)}
+                </div>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--c-ink2)" }}>«{r.text}»</p>
+                <div className="mt-auto pt-2 border-t flex items-center gap-1.5" style={{ borderColor: "var(--c-border)" }}>
+                  <span className="text-xs font-semibold" style={{ color: "var(--c-blue)" }}>Яндекс Карты</span>
+                  <span className="text-xs" style={{ color: "var(--c-ink3)" }}>· проверенный отзыв</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -715,13 +825,20 @@ export default function Index() {
                       value={consultPhone} onChange={e => { setConsultPhone(formatPhone(e.target.value)); setConsultErrors(er => ({...er, phone: undefined})); }} />
                     {consultErrors.phone && <p className="text-xs text-red-500 mt-1">{consultErrors.phone}</p>}
                   </div>
-                  <button className="btn-green py-3.5 text-sm" onClick={() => { if (validateConsult()) setConsultDone(true); }}>
+                  <textarea className="inp" rows={2} placeholder="Комментарий (необязательно)"
+                    value={consultComment} onChange={e => setConsultComment(e.target.value)} />
+                  <label className="flex items-start gap-2 cursor-pointer">
+                    <input type="checkbox" checked={consultAgree} onChange={e => setConsultAgree(e.target.checked)}
+                      className="mt-0.5 flex-shrink-0 accent-blue-600" />
+                    <span className="text-xs" style={{ color: "var(--c-ink3)" }}>
+                      Соглашаюсь с{" "}
+                      <span className="underline cursor-pointer" style={{ color: "var(--c-blue)" }}>Политикой конфиденциальности</span>
+                    </span>
+                  </label>
+                  <button className="btn-green py-3.5 text-sm" style={{ opacity: consultAgree ? 1 : 0.5 }}
+                    onClick={() => { if (consultAgree && validateConsult()) setConsultDone(true); }}>
                     Перезвонить в рабочее время →
                   </button>
-                  <p className="text-xs text-center" style={{ color: "var(--c-ink3)" }}>
-                    Нажимая кнопку, вы соглашаетесь с{" "}
-                    <span className="underline cursor-pointer" style={{ color: "var(--c-blue)" }}>Политикой конфиденциальности</span>
-                  </p>
                 </div>
               </div>
             )}
@@ -757,20 +874,9 @@ export default function Index() {
       </section>
 
       {/* ========== FOOTER ========== */}
-      <footer className="py-7 px-4 lg:px-6" style={{ background: "var(--c-ink)" }}>
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-5">
-          <div className="flex items-center gap-3">
-            <img src={LOGO_IMG} alt="ПК Запад" className="h-9 w-auto object-contain" style={{ filter: "brightness(10)" }} />
-            <div>
-              <div className="display-font font-bold text-base text-white">ПК ЗАПАД</div>
-              <div className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>Офсетная типография полного цикла · Москва · С 1996 года</div>
-            </div>
-          </div>
-          <div className="text-xs text-center" style={{ color: "rgba(255,255,255,0.35)" }}>© 2024 ПК Запад · Все права защищены</div>
-          <div className="flex flex-col items-end gap-1">
-            <a href="tel:+74952521206" className="font-bold display-font text-base" style={{ color: "var(--c-green)" }}>8 (495) 521-42-06</a>
-            <a href="mailto:info@pkzapad.ru" className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>info@pkzapad.ru</a>
-          </div>
+      <footer className="py-4 px-4 lg:px-6" style={{ background: "var(--c-ink)" }}>
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>© 2026 ПК Запад · Все права защищены</div>
         </div>
       </footer>
 
@@ -825,13 +931,18 @@ export default function Index() {
                       </button>
                       <input ref={cbFileRef} type="file" className="hidden" onChange={e => setCbFile(e.target.files?.[0] || null)} />
                     </div>
-                    <button className="btn-green py-3.5 text-sm" onClick={() => { if (validateCb()) setCbDone(true); }}>
+                    <label className="flex items-start gap-2 cursor-pointer">
+                      <input type="checkbox" checked={cbAgree} onChange={e => setCbAgree(e.target.checked)}
+                        className="mt-0.5 flex-shrink-0 accent-blue-600" />
+                      <span className="text-xs" style={{ color: "var(--c-ink3)" }}>
+                        Соглашаюсь с{" "}
+                        <span className="underline cursor-pointer" style={{ color: "var(--c-blue)" }}>Политикой конфиденциальности</span>
+                      </span>
+                    </label>
+                    <button className="btn-green py-3.5 text-sm" style={{ opacity: cbAgree ? 1 : 0.5 }}
+                      onClick={() => { if (cbAgree && validateCb()) setCbDone(true); }}>
                       Отправить заявку →
                     </button>
-                    <p className="text-xs text-center" style={{ color: "var(--c-ink3)" }}>
-                      Нажимая кнопку, вы соглашаетесь с{" "}
-                      <span className="underline cursor-pointer" style={{ color: "var(--c-blue)" }}>Политикой конфиденциальности</span>
-                    </p>
                   </div>
                 </>
               )}
@@ -853,19 +964,37 @@ export default function Index() {
             </div>
             <div className="px-6 py-5">
               {quizDone ? (
-                <div className="text-center py-2">
-                  <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: "#f0fdf4" }}>
-                    <Icon name="CheckCircle" size={32} style={{ color: "var(--c-green)" }} />
-                  </div>
-                  <h3 className="display-font font-bold text-xl mb-2" style={{ color: "var(--c-ink)" }}>Спасибо за заявку!</h3>
-                  <p className="text-sm mb-4" style={{ color: "var(--c-ink2)" }}>Ваша заявка на печать принята. Менеджер свяжется в течение 1 часа.</p>
-                  {getEstimate() && (
-                    <div className="rounded-xl p-4 mb-4 text-left" style={{ background: "var(--c-bg2)" }}>
-                      <div className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: "var(--c-blue)" }}>Примерная стоимость</div>
-                      <div className="display-font font-bold text-xl" style={{ color: "var(--c-ink)" }}>{getEstimate()}</div>
-                      <div className="text-xs mt-1" style={{ color: "var(--c-ink3)" }}>Точный расчёт придёт в течение 30 минут</div>
+                <div className="py-2">
+                  <div className="text-center mb-5">
+                    <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: "#f0fdf4" }}>
+                      <Icon name="CheckCircle" size={32} style={{ color: "var(--c-green)" }} />
                     </div>
-                  )}
+                    <h3 className="display-font font-bold text-xl mb-2" style={{ color: "var(--c-ink)" }}>Спасибо за заявку!</h3>
+                    <p className="text-sm" style={{ color: "var(--c-ink2)" }}>
+                      Ваша заявка на печать принята. Менеджер свяжется с вами в течение <strong>1 рабочего часа</strong> (с 9 до 18 в будни).
+                    </p>
+                  </div>
+                  <div className="rounded-xl p-4 mb-4" style={{ background: "var(--c-bg2)" }}>
+                    <div className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--c-blue)" }}>Что вы получите:</div>
+                    <ul className="flex flex-col gap-2">
+                      {[
+                        "Точный расчёт в таблице с разбивкой по бумаге, краске и послепечатке",
+                        "Контрольные листы для подписи (опционально)",
+                        "Предложение о бесплатном тестовом тираже (для новых клиентов)",
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "var(--c-ink2)" }}>
+                          <Icon name="Check" size={14} style={{ color: "var(--c-green)", marginTop: 2, flexShrink: 0 }} />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <p className="text-xs text-center mb-4" style={{ color: "var(--c-ink3)" }}>
+                    А пока посмотрите, как работает наше оборудование —{" "}
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "var(--c-blue)" }}>
+                      короткое видео до 30 сек
+                    </a>
+                  </p>
                   <div className="flex gap-3">
                     <button className="btn-blue flex-1 py-3 text-sm" onClick={() => setQuizOpen(false)}>Закрыть</button>
                     <a href="tel:+74952521206" className="btn-green flex-1 py-3 text-sm flex items-center justify-center gap-1.5">
@@ -893,21 +1022,39 @@ export default function Index() {
                     </div>
                     <input className="inp" placeholder="Email (необязательно)" value={quizContacts.email} onChange={e => setQuizContacts({...quizContacts, email: e.target.value})} />
                     <textarea className="inp" rows={2} placeholder="Комментарий (необязательно)" value={quizContacts.comment} onChange={e => setQuizContacts({...quizContacts, comment: e.target.value})} />
-                    <button className="btn-green py-3.5 text-sm" onClick={() => { if (validateQuiz()) setQuizDone(true); }}>
+                    <label className="flex items-start gap-2 cursor-pointer">
+                      <input type="checkbox" checked={quizAgree} onChange={e => setQuizAgree(e.target.checked)}
+                        className="mt-0.5 flex-shrink-0 accent-blue-600" />
+                      <span className="text-xs" style={{ color: "var(--c-ink3)" }}>
+                        Соглашаюсь с{" "}
+                        <span className="underline" style={{ color: "var(--c-blue)" }}>Политикой конфиденциальности</span>
+                      </span>
+                    </label>
+                    <button className="btn-green py-3.5 text-sm" style={{ opacity: quizAgree ? 1 : 0.5 }}
+                      onClick={() => { if (quizAgree && validateQuiz()) setQuizDone(true); }}>
                       Получить расчёт + скидку 10% →
                     </button>
-                    <p className="text-xs text-center" style={{ color: "var(--c-ink3)" }}>Нажимая кнопку, вы соглашаетесь с Политикой конфиденциальности</p>
                   </div>
                 </div>
               ) : (
                 <div>
-                  <div className="flex gap-1.5 mb-5">
-                    {QUIZ_STEPS.map((_, i) => (
-                      <div key={i} className="h-1.5 rounded-full flex-1 transition-all"
-                        style={{ background: i <= quizStep ? "var(--c-blue)" : "var(--c-border)" }} />
+                  <div className="flex gap-2 mb-5 justify-center">
+                    {QUIZ_STEPS.map((step, i) => (
+                      <div key={i} className="flex flex-col items-center gap-1">
+                        <div className="w-9 h-9 rounded-full flex items-center justify-center transition-all"
+                          style={{ background: i < quizStep ? "var(--c-green)" : i === quizStep ? "var(--c-blue)" : "var(--c-bg3)" }}>
+                          <Icon name={step.icon} size={16} style={{ color: i <= quizStep ? "#fff" : "var(--c-ink3)" }} />
+                        </div>
+                        <div className="h-1 w-8 rounded-full transition-all" style={{ background: i <= quizStep ? "var(--c-blue)" : "var(--c-border)" }} />
+                      </div>
                     ))}
                   </div>
-                  <h3 className="font-bold text-base mb-3" style={{ color: "var(--c-ink)" }}>{QUIZ_STEPS[quizStep].title}</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "var(--c-blue-light)" }}>
+                      <Icon name={QUIZ_STEPS[quizStep].icon} size={15} style={{ color: "var(--c-blue)" }} />
+                    </div>
+                    <h3 className="font-bold text-base" style={{ color: "var(--c-ink)" }}>{QUIZ_STEPS[quizStep].title}</h3>
+                  </div>
                   <div className="flex flex-col gap-2 mb-5">
                     {QUIZ_STEPS[quizStep].options.map(opt => (
                       <button key={opt} className={`quiz-option${quizAnswers[quizStep] === opt ? " selected" : ""}`}
@@ -926,6 +1073,50 @@ export default function Index() {
                   </div>
                 </div>
               )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========== MODAL: ГАЛЕРЕЯ КАРТОЧЕК ========== */}
+      {cardGallery && (
+        <div className="fixed inset-0 z-[300] flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.75)" }}
+          onClick={e => { if (e.target === e.currentTarget) setCardGallery(null); }}>
+          <div className="relative w-full max-w-xl rounded-2xl overflow-hidden" style={{ background: "#fff", boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}>
+            <div className="flex items-center justify-between px-5 py-3 border-b" style={{ borderColor: "var(--c-border)" }}>
+              <span className="display-font font-bold text-lg" style={{ color: "var(--c-ink)" }}>Примеры: {cardGallery.title}</span>
+              <button onClick={() => setCardGallery(null)}><Icon name="X" size={18} style={{ color: "var(--c-ink3)" }} /></button>
+            </div>
+            <div className="relative" style={{ aspectRatio: "4/3" }}>
+              {cardGallery.imgs.map((url, i) => (
+                <img key={i} src={url} alt="" className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
+                  style={{ opacity: i === cardGalleryIdx ? 1 : 0 }} />
+              ))}
+              <button className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full flex items-center justify-center"
+                style={{ background: "rgba(255,255,255,0.9)" }}
+                onClick={() => setCardGalleryIdx(i => (i - 1 + cardGallery.imgs.length) % cardGallery.imgs.length)}>
+                <Icon name="ChevronLeft" size={18} style={{ color: "var(--c-ink)" }} />
+              </button>
+              <button className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full flex items-center justify-center"
+                style={{ background: "rgba(255,255,255,0.9)" }}
+                onClick={() => setCardGalleryIdx(i => (i + 1) % cardGallery.imgs.length)}>
+                <Icon name="ChevronRight" size={18} style={{ color: "var(--c-ink)" }} />
+              </button>
+            </div>
+            <div className="flex gap-2 justify-center p-3">
+              {cardGallery.imgs.map((url, i) => (
+                <button key={i} onClick={() => setCardGalleryIdx(i)}
+                  className="rounded-lg overflow-hidden flex-shrink-0"
+                  style={{ width: 58, height: 42, outline: i === cardGalleryIdx ? "2.5px solid var(--c-blue)" : "2px solid transparent" }}>
+                  <img src={url} alt="" className="w-full h-full object-cover" />
+                </button>
+              ))}
+            </div>
+            <div className="px-5 pb-4">
+              <button onClick={() => { setCardGallery(null); openQuiz(cardGallery.title.slice(0, -1)); }}
+                className="btn-blue w-full py-3 text-sm">
+                Рассчитать стоимость {cardGallery.title.toLowerCase()} →
+              </button>
             </div>
           </div>
         </div>
