@@ -85,7 +85,8 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Onest", sans-serif;
+    font-weight: 500;
     color: var(--c-ink);
     background: var(--c-bg);
   }
@@ -153,18 +154,16 @@
 }
 
 .display-font {
-  font-family: "Playfair Display", serif;
-}
-.nav-font {
-  font-family: "Oswald", sans-serif;
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
 }
 
 .btn-green {
   background: var(--c-green);
   color: #ffffff;
-  font-family: "Oswald", "PT Sans", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   border-radius: 8px;
   transition:
@@ -182,9 +181,9 @@
   border: 2px solid var(--c-blue);
   color: var(--c-blue);
   background: transparent;
-  font-family: "Oswald", "PT Sans", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   border-radius: 8px;
   transition: all 0.2s;
@@ -197,9 +196,9 @@
 .btn-blue {
   background: var(--c-blue);
   color: #fff;
-  font-family: "Oswald", "PT Sans", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   border-radius: 8px;
   transition: all 0.2s;
@@ -211,12 +210,12 @@
 }
 
 .section-tag {
-  font-family: "Oswald", sans-serif;
+  font-family: "Onest", sans-serif;
   font-size: 11px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--c-blue);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .card-light {
@@ -243,7 +242,7 @@
   background: #fff;
   outline: none;
   transition: border-color 0.2s;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Onest", sans-serif;
 }
 .inp:focus {
   border-color: var(--c-blue);
