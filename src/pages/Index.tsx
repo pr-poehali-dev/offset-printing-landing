@@ -20,10 +20,16 @@ const PORTFOLIO_TABS = ["Каталоги", "Брошюры", "Буклеты"];
 const PORTFOLIO_ITEMS = [
   { tab: "Каталоги", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/e03f7d83-e6f5-404f-b62a-66598e7263d7.jpg", format: "200×270 мм", pages: "120 полос + обложка", paper: "Мелованная матовая 90 г/м²", cover: "Мелованная 200 г/м² + матовый лак", color: "4+4 (CMYK)" },
   { tab: "Каталоги", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/ab9199c2-2ff9-4418-9a62-0e04cdbd22fb.jpg", format: "210×297 мм (А4)", pages: "64 полосы + обложка", paper: "Мелованная глянцевая 115 г/м²", cover: "Мелованная 300 г/м² + УФ-лак", color: "4+4 (CMYK)" },
+  { tab: "Каталоги", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8c0d5418-a0c0-4b5b-8f9c-e3df5fa6130e.jpg", format: "210×148 мм (А5)", pages: "48 полос + обложка", paper: "Мелованная матовая 115 г/м²", cover: "Мелованная 250 г/м² + глянцевая ламинация", color: "4+4 (CMYK)" },
+  { tab: "Каталоги", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/21bd82c3-cb6e-402f-a981-41aada75e978.jpg", format: "210×297 мм, premium", pages: "88 полос + обложка", paper: "Мелованная глянцевая 130 г/м²", cover: "Дизайнерская 350 г/м² + тиснение", color: "4+4 (CMYK)" },
   { tab: "Брошюры", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/7c832436-6b37-4a2f-a01e-1517d72b08fd.jpg", format: "148×210 мм (А5)", pages: "32 страницы", paper: "Офсетная 80 г/м²", cover: "Мелованная 250 г/м² + матовая ламинация", color: "4+0" },
-  { tab: "Брошюры", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8c0d5418-a0c0-4b5b-8f9c-e3df5fa6130e.jpg", format: "210×297 мм (А4)", pages: "48 страниц, КБС", paper: "Мелованная 130 г/м²", cover: "Дизайнерская 300 г/м² + тиснение фольгой", color: "4+4 (CMYK)" },
+  { tab: "Брошюры", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/d2909581-bfe0-4dcf-8557-8f140c57a6e8.jpg", format: "210×297 мм (А4)", pages: "48 страниц, КБС", paper: "Мелованная 130 г/м²", cover: "Дизайнерская 300 г/м² + тиснение фольгой", color: "4+4 (CMYK)" },
+  { tab: "Брошюры", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/0ca40e45-c634-4c66-a954-ea438f94f18f.jpg", format: "100×210 мм (Евро)", pages: "16 страниц, скоба", paper: "Мелованная матовая 100 г/м²", cover: "Мелованная 250 г/м² + матовый лак", color: "4+4 (CMYK)" },
+  { tab: "Брошюры", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/e03f7d83-e6f5-404f-b62a-66598e7263d7.jpg", format: "148×210 мм (А5)", pages: "64 страницы, КБС", paper: "Офсетная 90 г/м²", cover: "Мелованная 300 г/м² + soft-touch ламинация", color: "4+0" },
   { tab: "Буклеты", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/8983bdf0-dabf-4df3-91ba-208d3ad277b9.jpg", format: "210×297 мм, евро-сложение", pages: "6 полос", paper: "Мелованная глянцевая 150 г/м²", cover: "–", color: "4+4 (CMYK)" },
   { tab: "Буклеты", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/3dc6c535-1fc3-429f-84c2-9c5e65c2c7f1.jpg", format: "210×297 мм, книжное сложение", pages: "8 полос", paper: "Мелованная матовая 170 г/м²", cover: "–", color: "4+4 (CMYK)" },
+  { tab: "Буклеты", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/ab9199c2-2ff9-4418-9a62-0e04cdbd22fb.jpg", format: "100×210 мм, гармошка", pages: "6 полос", paper: "Мелованная глянцевая 135 г/м²", cover: "–", color: "4+4 (CMYK)" },
+  { tab: "Буклеты", img: "https://cdn.poehali.dev/projects/d46d0bb4-7e8b-4140-8b12-a727ae7be6b4/files/21bd82c3-cb6e-402f-a981-41aada75e978.jpg", format: "297×210 мм, двойное сложение", pages: "8 полос", paper: "Мелованная матовая 200 г/м²", cover: "–", color: "4+4 (CMYK)" },
 ];
 
 const TICKER_ITEMS = [
@@ -42,6 +48,7 @@ const NAV_LINKS = [
   { label: "Портфолио", href: "#portfolio" },
   { label: "Процесс", href: "#process" },
   { label: "Оборудование", href: "#equipment" },
+  { label: "Отзывы", href: "#reviews" },
   { label: "FAQ", href: "#faq" },
   { label: "Контакты", href: "#contacts" },
 ];
@@ -70,10 +77,42 @@ const FAQ_ITEMS = [
 ];
 
 const QUIZ_STEPS = [
-  { title: "Что хотите напечатать?", icon: "BookOpen", options: ["Буклет", "Брошюра", "Каталог", "Другое (журнал, листовка)"] },
-  { title: "Какой примерный тираж?", icon: "Layers", options: ["до 500 шт.", "500–1 000 шт.", "1 000–3 000 шт.", "3 000–10 000 шт.", "от 10 000 шт."] },
-  { title: "Есть ли у вас готовый макет?", icon: "FileImage", options: ["Да, всё готово", "Да, но нужна проверка технолога", "Нет, нужна помощь с дизайном"] },
-  { title: "Какой срок сдачи?", icon: "Clock", options: ["Срочно (1–2 дня)", "3–5 дней", "5–10 дней", "Не горит — нужна лучшая цена"] },
+  {
+    title: "Что хотите напечатать?", icon: "BookOpen",
+    options: [
+      { label: "Буклет", icon: "FileText", desc: "2–8 полос, сложение" },
+      { label: "Брошюра", icon: "Book", desc: "8–96 страниц, скоба/КБС" },
+      { label: "Каталог", icon: "BookOpen", desc: "48–300+ страниц" },
+      { label: "Другое", icon: "MoreHorizontal", desc: "Журнал, листовка, постер" },
+    ]
+  },
+  {
+    title: "Какой примерный тираж?", icon: "Layers",
+    options: [
+      { label: "до 500 шт.", icon: "Package", desc: "Малый тираж" },
+      { label: "500–1 000 шт.", icon: "Layers", desc: "Стандарт" },
+      { label: "1 000–3 000 шт.", icon: "BarChart2", desc: "Средний тираж" },
+      { label: "3 000–10 000 шт.", icon: "TrendingUp", desc: "Большой тираж" },
+      { label: "от 10 000 шт.", icon: "Factory", desc: "Промышленный" },
+    ]
+  },
+  {
+    title: "Есть ли у вас готовый макет?", icon: "FileImage",
+    options: [
+      { label: "Да, всё готово", icon: "CheckCircle", desc: "PDF или AI/InDesign" },
+      { label: "Нужна проверка технолога", icon: "Eye", desc: "Проверим вылеты и цвет" },
+      { label: "Нет, нужна помощь с дизайном", icon: "Pencil", desc: "Поможем с разработкой" },
+    ]
+  },
+  {
+    title: "Какой срок сдачи?", icon: "Clock",
+    options: [
+      { label: "Срочно (1–2 дня)", icon: "Zap", desc: "Срочный тираж" },
+      { label: "3–5 дней", icon: "Timer", desc: "Стандартный срок" },
+      { label: "5–10 дней", icon: "Calendar", desc: "Без спешки" },
+      { label: "Нужна лучшая цена", icon: "Tag", desc: "Срок не горит" },
+    ]
+  },
 ];
 
 function formatPhone(raw: string) {
@@ -116,6 +155,8 @@ export default function Index() {
   const [consultName, setConsultName] = useState("");
   const [consultPhone, setConsultPhone] = useState("");
   const [consultComment, setConsultComment] = useState("");
+  const [consultFile, setConsultFile] = useState<File | null>(null);
+  const consultFileRef = useRef<HTMLInputElement>(null);
   const [consultErrors, setConsultErrors] = useState<{ name?: string; phone?: string }>({});
   const [consultDone, setConsultDone] = useState(false);
   const [consultAgree, setConsultAgree] = useState(false);
@@ -125,6 +166,13 @@ export default function Index() {
 
   const [cardGallery, setCardGallery] = useState<{ title: string; imgs: string[] } | null>(null);
   const [cardGalleryIdx, setCardGalleryIdx] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll2 = () => setShowScrollTop(window.scrollY > 400);
+    window.addEventListener("scroll", onScroll2);
+    return () => window.removeEventListener("scroll", onScroll2);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -233,9 +281,14 @@ export default function Index() {
         </div>
 
         {/* Main nav */}
-        <div className="max-w-7xl mx-auto px-3 lg:px-6 h-14 flex items-center justify-between gap-2">
-          {/* Logo + descriptor */}
-          <div className="flex items-center gap-2 flex-shrink-0 min-w-0">
+        <div className="max-w-7xl mx-auto px-3 lg:px-6 h-14 flex items-center gap-2">
+          {/* Бургер — крайний левый на мобиле */}
+          <button className="xl:hidden p-1.5 flex-shrink-0" onClick={() => setMenuOpen(!menuOpen)}>
+            <Icon name={menuOpen ? "X" : "Menu"} size={22} style={{ color: "var(--c-ink)" }} />
+          </button>
+
+          {/* Logo + descriptor — по центру на мобиле */}
+          <div className="flex items-center gap-2 flex-1 justify-center xl:justify-start xl:flex-none min-w-0">
             <img src={LOGO_IMG} alt="ПК Запад" className="h-9 w-auto object-contain flex-shrink-0" />
             <div className="hidden lg:block text-xs leading-snug" style={{ color: "var(--c-ink3)", maxWidth: 200 }}>
               Надёжная офсетная типография полного цикла в Москве.<br />
@@ -243,7 +296,7 @@ export default function Index() {
             </div>
           </div>
 
-          <nav className="hidden xl:flex items-center gap-4">
+          <nav className="hidden xl:flex items-center gap-4 flex-1 justify-center">
             {NAV_LINKS.map(l => (
               <button key={l.href} onClick={() => scrollTo(l.href)}
                 className="text-sm font-medium hover:text-blue-600 transition-colors whitespace-nowrap"
@@ -254,15 +307,16 @@ export default function Index() {
           </nav>
 
           <div className="flex items-center gap-2 flex-shrink-0">
-            {/* Телефон — виден на мобильном, скрыт на xl где есть nav */}
-            <a href="tel:+74952521206" className="xl:hidden flex flex-col items-end">
-              <span className="font-bold display-font leading-tight" style={{ fontSize: "0.8rem", color: "var(--c-blue)" }}>8 (495) 521-42-06</span>
+            {/* Телефон — по центру на мобиле показываем отдельно, здесь только на средних экранах */}
+            <a href="tel:+74952521206" className="hidden md:flex xl:hidden flex-col items-end">
+              <span className="font-bold leading-tight" style={{ fontSize: "0.8rem", color: "var(--c-blue)" }}>8 (495) 521-42-06</span>
             </a>
             <button onClick={openCb} className="btn-green px-3 py-2 text-xs hidden md:block">Перезвоните мне</button>
-            <button className="xl:hidden p-1.5" onClick={() => setMenuOpen(!menuOpen)}>
-              <Icon name={menuOpen ? "X" : "Menu"} size={22} style={{ color: "var(--c-ink)" }} />
-            </button>
           </div>
+        </div>
+        {/* Телефон по центру только на мобиле (< md) */}
+        <div className="md:hidden flex justify-center pb-1.5" style={{ borderTop: "1px solid var(--c-bg2)" }}>
+          <a href="tel:+74952521206" className="font-bold text-sm" style={{ color: "var(--c-blue)" }}>8 (495) 521-42-06</a>
         </div>
 
         {menuOpen && (
@@ -299,11 +353,14 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-6 py-8 lg:py-12 grid lg:grid-cols-2 gap-6 lg:gap-10 items-start">
           {/* Left */}
           <div>
-            <h1 className="display-font font-bold leading-tight mb-5" style={{ fontSize: "clamp(1.35rem, 2.7vw, 2.1rem)", color: "var(--c-ink)" }}>
-              Напечатаем рекламную полиграфию{" "}
-              от <span style={{ color: "var(--c-blue)" }}>500 шт.</span> с гарантией качества и сроков
-              на <span style={{ color: "var(--c-blue)" }}>15%</span> ниже рынка
-              за <span style={{ color: "var(--c-blue)" }}>5 дней</span>
+            <h1 className="display-font font-bold leading-tight mb-5" style={{ color: "var(--c-ink)" }}>
+              <span className="block" style={{ fontSize: "clamp(1.25rem, 2.6vw, 2rem)" }}>Напечатаем рекламную полиграфию</span>
+              <span className="block" style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.7rem)" }}>
+                от <span style={{ color: "var(--c-blue)" }}>500 шт.</span> с гарантией качества и сроков
+              </span>
+              <span className="block" style={{ fontSize: "clamp(1.1rem, 2.2vw, 1.7rem)" }}>
+                на <span style={{ color: "var(--c-blue)" }}>15%</span> ниже рынка за <span style={{ color: "var(--c-blue)" }}>5 дней</span>
+              </span>
             </h1>
 
             <ul className="mb-5 flex flex-col gap-2">
@@ -371,7 +428,7 @@ export default function Index() {
       </section>
 
       {/* ========== BLOCK 2: JTBD ========== */}
-      <section id="jtbd" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "#fff" }}>
+      <section id="jtbd" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "#fff" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <div className="section-tag mb-3">Мы решаем ваши задачи</div>
@@ -401,7 +458,7 @@ export default function Index() {
       </section>
 
       {/* ========== BLOCK 3: УТП ========== */}
-      <section id="advantages" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "var(--c-bg2)" }}>
+      <section id="advantages" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "var(--c-bg2)" }}>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div>
             <div className="section-tag mb-3">Почему нам доверяют 28 лет</div>
@@ -454,7 +511,7 @@ export default function Index() {
       </section>
 
       {/* ========== BLOCK 4: УСЛУГИ ========== */}
-      <section id="services" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "#fff" }}>
+      <section id="services" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "#fff" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <div className="section-tag mb-3">Продукция</div>
@@ -524,7 +581,7 @@ export default function Index() {
       </section>
 
       {/* ========== BLOCK 5: КЕЙС ========== */}
-      <section id="case" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "var(--c-bg2)" }}>
+      <section id="case" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "var(--c-bg2)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <div className="section-tag mb-3">Кейс</div>
@@ -572,17 +629,28 @@ export default function Index() {
       </section>
 
       {/* ========== ПАРТНЁРЫ ========== */}
-      <section className="py-8 overflow-hidden" style={{ background: "#fff", borderTop: "1px solid var(--c-border)", borderBottom: "1px solid var(--c-border)" }}>
+      <section className="py-6 overflow-hidden" style={{ background: "#fff", borderTop: "1px solid var(--c-border)", borderBottom: "1px solid var(--c-border)" }}>
         <div className="text-center mb-4">
           <div className="section-tag">Нам доверяют</div>
         </div>
         <div className="relative">
-          <div className="flex" style={{ width: "max-content", animation: "marquee 30s linear infinite" }}>
+          <div className="flex items-center" style={{ width: "max-content", animation: "marquee 35s linear infinite" }}>
             {[...Array(2)].map((_, rep) => (
-              ["Ашан", "Лента", "Сбербанк", "Ростелеком", "М.Видео", "Эвалар", "РЖД", "Московский метрополитен", "Аэрофлот", "Газпром нефть"].map((name, i) => (
-                <div key={`${rep}-${i}`} className="flex-shrink-0 mx-8 flex items-center justify-center"
-                  style={{ height: 48 }}>
-                  <span className="display-font font-bold text-lg tracking-wider" style={{ color: "var(--c-ink3)", opacity: 0.55 }}>{name}</span>
+              [
+                { name: "АШАН", color: "#e8380d" },
+                { name: "СБЕР", color: "#21a038" },
+                { name: "М.ВИДЕО", color: "#eb212e" },
+                { name: "ЛЕНТА", color: "#ef3124" },
+                { name: "РОСТЕЛЕКОМ", color: "#0067b1" },
+                { name: "ЭВАЛАР", color: "#005baa" },
+                { name: "РЖД", color: "#cc0000" },
+                { name: "АЭРОФЛОТ", color: "#00539f" },
+                { name: "ГАЗПРОМ", color: "#0053a0" },
+                { name: "ВТБ", color: "#005896" },
+              ].map((p, i) => (
+                <div key={`${rep}-${i}`} className="flex-shrink-0 mx-7 flex items-center justify-center"
+                  style={{ height: 44 }}>
+                  <span className="font-bold tracking-widest" style={{ fontSize: "1.05rem", color: p.color, opacity: 0.7 }}>{p.name}</span>
                 </div>
               ))
             ))}
@@ -591,7 +659,7 @@ export default function Index() {
       </section>
 
       {/* ========== ПОРТФОЛИО ========== */}
-      <section id="portfolio" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "#fff" }}>
+      <section id="portfolio" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "#fff" }}>
         <div className="max-w-7xl mx-auto">
           <div className="mb-7 text-center">
             <div className="section-tag mb-3">Портфолио</div>
@@ -634,7 +702,7 @@ export default function Index() {
       </section>
 
       {/* ========== ПРОЦЕСС ========== */}
-      <section id="process" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "var(--c-bg2)" }}>
+      <section id="process" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "var(--c-bg2)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <div className="section-tag mb-3">Как мы работаем</div>
@@ -664,7 +732,7 @@ export default function Index() {
       </section>
 
       {/* ========== ОБОРУДОВАНИЕ ========== */}
-      <section id="equipment" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "#fff" }}>
+      <section id="equipment" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "#fff" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
             <div className="section-tag mb-3">Производство</div>
@@ -712,7 +780,7 @@ export default function Index() {
       </section>
 
       {/* ========== ОТЗЫВЫ ========== */}
-      <section className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "#fff" }}>
+      <section id="reviews" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "#fff" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <div className="section-tag mb-3">Отзывы клиентов</div>
@@ -765,7 +833,7 @@ export default function Index() {
       </section>
 
       {/* ========== FAQ ========== */}
-      <section id="faq" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "var(--c-bg2)" }}>
+      <section id="faq" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "var(--c-bg2)" }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <div className="section-tag mb-3">FAQ</div>
@@ -794,11 +862,11 @@ export default function Index() {
       </section>
 
       {/* ========== КОНТАКТЫ ========== */}
-      <section id="contacts" className="py-14 lg:py-20 px-4 lg:px-6" style={{ background: "#fff" }}>
+      <section id="contacts" className="py-10 lg:py-14 px-4 lg:px-6" style={{ background: "#fff" }}>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
           <div>
             <div className="section-tag mb-3">Консультация</div>
-            <h2 className="display-font font-bold mb-3" style={{ fontSize: "clamp(1.45rem, 3vw, 2.3rem)", color: "var(--c-ink)" }}>
+            <h2 className="display-font font-bold mb-3" style={{ fontSize: "clamp(1.1rem, 2vw, 1.6rem)", color: "var(--c-ink)" }}>
               Получите консультацию технолога
             </h2>
             <p className="mb-6 text-sm leading-relaxed" style={{ color: "var(--c-ink2)" }}>
@@ -827,6 +895,15 @@ export default function Index() {
                   </div>
                   <textarea className="inp" rows={2} placeholder="Комментарий (необязательно)"
                     value={consultComment} onChange={e => setConsultComment(e.target.value)} />
+                  <div>
+                    <button type="button" onClick={() => consultFileRef.current?.click()}
+                      className="flex items-center gap-2 text-sm px-4 py-2.5 rounded-lg border transition-colors"
+                      style={{ borderColor: consultFile ? "var(--c-blue)" : "var(--c-border)", color: consultFile ? "var(--c-blue)" : "var(--c-ink3)", background: consultFile ? "var(--c-blue-light)" : "#fafafa" }}>
+                      <Icon name="Paperclip" size={14} />
+                      {consultFile ? consultFile.name : "Прикрепить файл (макет, ТЗ)"}
+                    </button>
+                    <input ref={consultFileRef} type="file" className="hidden" onChange={e => setConsultFile(e.target.files?.[0] || null)} />
+                  </div>
                   <label className="flex items-start gap-2 cursor-pointer">
                     <input type="checkbox" checked={consultAgree} onChange={e => setConsultAgree(e.target.checked)}
                       className="mt-0.5 flex-shrink-0 accent-blue-600" />
@@ -872,6 +949,23 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* ========== ВИДЖЕТ: КОНСУЛЬТАЦИЯ + НАВЕРХ ========== */}
+      <div className="fixed right-4 bottom-6 z-[100] flex flex-col gap-2 items-end">
+        {showScrollTop && (
+          <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all hover:-translate-y-1"
+            style={{ background: "var(--c-blue)", color: "#fff" }}>
+            <Icon name="ChevronUp" size={20} />
+          </button>
+        )}
+        <button onClick={openCb}
+          className="flex items-center gap-2 px-4 py-3 rounded-full shadow-xl font-semibold text-sm transition-all hover:-translate-y-1"
+          style={{ background: "var(--c-green)", color: "#fff", boxShadow: "0 6px 24px rgba(45,189,78,0.4)" }}>
+          <Icon name="MessageCircle" size={16} />
+          <span className="hidden sm:inline">Получить консультацию</span>
+        </button>
+      </div>
 
       {/* ========== FOOTER ========== */}
       <footer className="py-4 px-4 lg:px-6" style={{ background: "var(--c-ink)" }}>
@@ -1038,28 +1132,48 @@ export default function Index() {
                 </div>
               ) : (
                 <div>
-                  <div className="flex gap-2 mb-5 justify-center">
+                  {/* Шкала прогресса */}
+                  <div className="mb-4">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="text-xs font-semibold" style={{ color: "var(--c-blue)" }}>
+                        Шаг {quizStep + 1} из {QUIZ_STEPS.length}
+                      </span>
+                      <span className="text-xs font-bold" style={{ color: "var(--c-blue)" }}>
+                        {Math.round(((quizStep) / QUIZ_STEPS.length) * 100)}%
+                      </span>
+                    </div>
+                    <div className="h-2 rounded-full overflow-hidden" style={{ background: "var(--c-bg3)" }}>
+                      <div className="h-full rounded-full transition-all duration-500"
+                        style={{ width: `${((quizStep) / QUIZ_STEPS.length) * 100}%`, background: "var(--c-blue)" }} />
+                    </div>
+                  </div>
+                  {/* Иконки шагов */}
+                  <div className="flex gap-2 mb-4 justify-center">
                     {QUIZ_STEPS.map((step, i) => (
                       <div key={i} className="flex flex-col items-center gap-1">
-                        <div className="w-9 h-9 rounded-full flex items-center justify-center transition-all"
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center transition-all"
                           style={{ background: i < quizStep ? "var(--c-green)" : i === quizStep ? "var(--c-blue)" : "var(--c-bg3)" }}>
-                          <Icon name={step.icon} size={16} style={{ color: i <= quizStep ? "#fff" : "var(--c-ink3)" }} />
+                          <Icon name={step.icon} size={14} style={{ color: i <= quizStep ? "#fff" : "var(--c-ink3)" }} />
                         </div>
-                        <div className="h-1 w-8 rounded-full transition-all" style={{ background: i <= quizStep ? "var(--c-blue)" : "var(--c-border)" }} />
                       </div>
                     ))}
                   </div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "var(--c-blue-light)" }}>
-                      <Icon name={QUIZ_STEPS[quizStep].icon} size={15} style={{ color: "var(--c-blue)" }} />
-                    </div>
-                    <h3 className="font-bold text-base" style={{ color: "var(--c-ink)" }}>{QUIZ_STEPS[quizStep].title}</h3>
-                  </div>
+                  <h3 className="font-bold text-base mb-3" style={{ color: "var(--c-ink)" }}>{QUIZ_STEPS[quizStep].title}</h3>
                   <div className="flex flex-col gap-2 mb-5">
                     {QUIZ_STEPS[quizStep].options.map(opt => (
-                      <button key={opt} className={`quiz-option${quizAnswers[quizStep] === opt ? " selected" : ""}`}
-                        onClick={() => { const a = [...quizAnswers]; a[quizStep] = opt; setQuizAnswers(a); }}>
-                        {opt}
+                      <button key={opt.label}
+                        className={`quiz-option${quizAnswers[quizStep] === opt.label ? " selected" : ""}`}
+                        onClick={() => { const a = [...quizAnswers]; a[quizStep] = opt.label; setQuizAnswers(a); }}>
+                        <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-all"
+                            style={{ background: quizAnswers[quizStep] === opt.label ? "var(--c-blue)" : "var(--c-bg2)" }}>
+                            <Icon name={opt.icon} size={15} style={{ color: quizAnswers[quizStep] === opt.label ? "#fff" : "var(--c-ink3)" }} />
+                          </div>
+                          <div className="text-left">
+                            <div className="font-semibold text-sm" style={{ color: "var(--c-ink)" }}>{opt.label}</div>
+                            <div className="text-xs" style={{ color: "var(--c-ink3)" }}>{opt.desc}</div>
+                          </div>
+                        </div>
                       </button>
                     ))}
                   </div>
