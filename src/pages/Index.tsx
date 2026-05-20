@@ -259,7 +259,7 @@ export default function Index() {
         style={{ background: "#fff", borderBottom: "2px solid var(--c-green)" }}>
 
         {/* Top bar */}
-        <div className="hidden md:block" style={{ background: "var(--c-ink)", borderBottom: "none" }}>
+        <div className="hidden md:block" style={{ background: "#1a3a6e", borderBottom: "none" }}>
           <div className="max-w-7xl mx-auto px-4 lg:px-6 py-1.5 flex items-center justify-between text-xs" style={{ color: "rgba(255,255,255,0.75)" }}>
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1"><Icon name="MapPin" size={12} style={{ color: "var(--c-green)" }} /> г. Москва, ул. Горбунова, 2</span>
@@ -334,7 +334,7 @@ export default function Index() {
       </header>
 
       {/* TICKER */}
-      <div className="overflow-hidden ticker-spacer" style={{ background: "var(--c-ink)" }} id="ticker">
+      <div className="overflow-hidden ticker-spacer" style={{ background: "#1a3a6e" }} id="ticker">
         <div className="flex py-2" style={{ width: "max-content", animation: "marquee 25s linear infinite" }}>
           {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
             <span key={i} className="text-white text-xs font-semibold mx-6 tracking-widest display-font whitespace-nowrap">
@@ -769,7 +769,7 @@ export default function Index() {
               </div>
             ))}
           </div>
-          <div className="p-5 flex flex-col sm:flex-row items-center gap-4" style={{ background: "var(--c-ink)" }}>
+          <div className="p-5 flex flex-col sm:flex-row items-center gap-4" style={{ background: "#1a3a6e" }}>
             <Icon name="Shield" size={28} style={{ color: "rgba(255,255,255,0.8)", flexShrink: 0 }} />
             <div>
               <div className="font-bold text-white text-sm mb-0.5">Резервное оборудование</div>
@@ -808,7 +808,7 @@ export default function Index() {
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 flex items-center justify-center display-font font-bold text-base text-white flex-shrink-0"
-                      style={{ background: "var(--c-ink)" }}>
+                      style={{ background: "#1a3a6e" }}>
                       {r.name[0]}
                     </div>
                     <div>
@@ -968,7 +968,7 @@ export default function Index() {
       </div>
 
       {/* ========== FOOTER ========== */}
-      <footer className="py-4 px-4 lg:px-6" style={{ background: "var(--c-ink)", borderTop: "4px solid var(--c-green)" }}>
+      <footer className="py-4 px-4 lg:px-6" style={{ background: "#1a3a6e", borderTop: "4px solid var(--c-green)" }}>
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>© 2026 ПК Запад · Все права защищены</div>
         </div>

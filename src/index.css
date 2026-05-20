@@ -37,15 +37,16 @@
     --c-bg: #ffffff;
     --c-bg2: #f7f7f7;
     --c-bg3: #eeeeee;
-    --c-ink: #1a2a5e;
-    --c-ink2: #2d3f7a;
-    --c-ink3: #7a8ab0;
+    --c-ink: #111111;
+    --c-ink2: #333333;
+    --c-ink3: #888888;
     --c-green: #dc2026;
     --c-green-dark: #b81820;
     --c-blue: #dc2026;
     --c-blue-light: #ffeaea;
-    --c-border: #dde1ef;
-    --c-shadow: rgba(26, 42, 94, 0.08);
+    --c-border: #e0e0e0;
+    --c-shadow: rgba(0, 0, 0, 0.07);
+    --c-dark-fill: #1a3a6e;
   }
 
   .dark {
