@@ -33,19 +33,19 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Светлая тема типографии */
+    /* Бело-красно-чёрный стиль */
     --c-bg: #ffffff;
-    --c-bg2: #f5f7fa;
-    --c-bg3: #eef1f6;
-    --c-ink: #1a1f2e;
-    --c-ink2: #4a5568;
-    --c-ink3: #718096;
-    --c-green: #2dbd4e;
-    --c-green-dark: #22963d;
-    --c-blue: #3b5bdb;
-    --c-blue-light: #e8eeff;
-    --c-border: #e2e8f0;
-    --c-shadow: rgba(0, 0, 0, 0.08);
+    --c-bg2: #f7f7f7;
+    --c-bg3: #eeeeee;
+    --c-ink: #111111;
+    --c-ink2: #333333;
+    --c-ink3: #888888;
+    --c-green: #dc2026;
+    --c-green-dark: #b81820;
+    --c-blue: #dc2026;
+    --c-blue-light: #ffeaea;
+    --c-border: #e0e0e0;
+    --c-shadow: rgba(0, 0, 0, 0.07);
   }
 
   .dark {
@@ -121,10 +121,10 @@
 @keyframes pulse-green {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(45, 189, 78, 0.45);
+    box-shadow: 0 0 0 0 rgba(220, 32, 38, 0.4);
   }
   60% {
-    box-shadow: 0 0 0 10px rgba(45, 189, 78, 0);
+    box-shadow: 0 0 0 10px rgba(220, 32, 38, 0);
   }
 }
 
@@ -163,9 +163,9 @@
   color: #ffffff;
   font-family: "Onest", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  border-radius: 8px;
+  border-radius: 0px;
   transition:
     background 0.2s,
     transform 0.15s,
@@ -175,60 +175,62 @@
 .btn-green:hover {
   background: var(--c-green-dark);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(45, 189, 78, 0.35);
+  box-shadow: 0 6px 20px rgba(220, 32, 38, 0.35);
 }
 .btn-outline {
-  border: 2px solid var(--c-blue);
-  color: var(--c-blue);
+  border: 2px solid var(--c-ink);
+  color: var(--c-ink);
   background: transparent;
   font-family: "Onest", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  border-radius: 8px;
+  border-radius: 0px;
   transition: all 0.2s;
 }
 .btn-outline:hover {
-  background: var(--c-blue);
+  background: var(--c-ink);
   color: #fff;
   transform: translateY(-1px);
 }
 .btn-blue {
-  background: var(--c-blue);
+  background: var(--c-ink);
   color: #fff;
   font-family: "Onest", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  border-radius: 8px;
+  border-radius: 0px;
   transition: all 0.2s;
 }
 .btn-blue:hover {
-  background: #2f4bbf;
+  background: #333;
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(59, 91, 219, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .section-tag {
   font-family: "Onest", sans-serif;
   font-size: 11px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--c-blue);
-  font-weight: 600;
+  color: var(--c-green);
+  font-weight: 700;
+  border-left: 3px solid var(--c-green);
+  padding-left: 8px;
 }
 
 .card-light {
   background: #fff;
   border: 1px solid var(--c-border);
-  border-radius: 16px;
-  box-shadow: 0 2px 12px var(--c-shadow);
+  border-radius: 0px;
+  box-shadow: 0 2px 8px var(--c-shadow);
   transition:
     box-shadow 0.2s,
     transform 0.2s;
 }
 .card-light:hover {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
 
@@ -245,7 +247,7 @@
   font-family: "Onest", sans-serif;
 }
 .inp:focus {
-  border-color: var(--c-blue);
+  border-color: var(--c-green);
 }
 .inp::placeholder {
   color: var(--c-ink3);
@@ -253,7 +255,7 @@
 
 .quiz-option {
   border: 1.5px solid var(--c-border);
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 12px 16px;
   cursor: pointer;
   transition: all 0.15s;
@@ -265,14 +267,15 @@
   display: block;
 }
 .quiz-option:hover {
-  border-color: var(--c-blue);
+  border-color: var(--c-green);
   background: var(--c-blue-light);
 }
 .quiz-option.selected {
-  border-color: var(--c-blue);
+  border-color: var(--c-green);
   background: var(--c-blue-light);
-  color: var(--c-blue);
+  color: var(--c-ink);
   font-weight: 600;
+  border-left-width: 3px;
 }
 
 /* Ticker spacer: mobile = nav 56px + tel row 28px, desktop = nav 56px + topbar 28px */

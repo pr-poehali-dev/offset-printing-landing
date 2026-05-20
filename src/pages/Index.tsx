@@ -255,25 +255,25 @@ export default function Index() {
     <div className="min-h-screen" style={{ background: "var(--c-bg)", color: "var(--c-ink)" }}>
 
       {/* ========== HEADER ========== */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "shadow-md" : ""}`}
-        style={{ background: "#fff", borderBottom: "1px solid var(--c-border)" }}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "shadow-lg" : ""}`}
+        style={{ background: "#fff", borderBottom: "2px solid var(--c-green)" }}>
 
         {/* Top bar */}
-        <div className="hidden md:block" style={{ background: "var(--c-bg2)", borderBottom: "1px solid var(--c-border)" }}>
-          <div className="max-w-7xl mx-auto px-4 lg:px-6 py-1.5 flex items-center justify-between text-xs" style={{ color: "var(--c-ink2)" }}>
+        <div className="hidden md:block" style={{ background: "var(--c-ink)", borderBottom: "none" }}>
+          <div className="max-w-7xl mx-auto px-4 lg:px-6 py-1.5 flex items-center justify-between text-xs" style={{ color: "rgba(255,255,255,0.75)" }}>
             <div className="flex items-center gap-4">
-              <span className="flex items-center gap-1"><Icon name="MapPin" size={12} style={{ color: "var(--c-blue)" }} /> г. Москва, ул. Горбунова, 2</span>
-              <span className="flex items-center gap-1"><Icon name="Clock" size={12} style={{ color: "var(--c-blue)" }} /> 9:00 – 18:00 МСК</span>
+              <span className="flex items-center gap-1"><Icon name="MapPin" size={12} style={{ color: "var(--c-green)" }} /> г. Москва, ул. Горбунова, 2</span>
+              <span className="flex items-center gap-1"><Icon name="Clock" size={12} style={{ color: "var(--c-green)" }} /> 9:00 – 18:00 МСК</span>
             </div>
             <div className="flex items-center gap-4">
-              <a href="mailto:info@pkzapad.ru" className="flex items-center gap-1 hover:text-blue-600 transition-colors">
-                <Icon name="Mail" size={12} style={{ color: "var(--c-blue)" }} /> info@pkzapad.ru
+              <a href="mailto:info@pkzapad.ru" className="flex items-center gap-1 hover:text-white transition-colors" style={{ color: "rgba(255,255,255,0.75)" }}>
+                <Icon name="Mail" size={12} style={{ color: "var(--c-green)" }} /> info@pkzapad.ru
               </a>
-              <a href="tel:+74952521206" className="flex items-center gap-1 font-bold" style={{ color: "var(--c-blue)" }}>
-                <Icon name="Phone" size={12} /> 8 (495) 521-42-06
+              <a href="tel:+74952521206" className="flex items-center gap-1 font-bold text-white">
+                <Icon name="Phone" size={12} style={{ color: "var(--c-green)" }} /> 8 (495) 521-42-06
               </a>
               <span className="flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block animate-pulse"></span>
+                <span className="w-1.5 h-1.5 rounded-full animate-pulse inline-block" style={{ background: "var(--c-green)" }}></span>
                 Звоните, мы работаем
               </span>
             </div>
@@ -334,7 +334,7 @@ export default function Index() {
       </header>
 
       {/* TICKER */}
-      <div className="overflow-hidden ticker-spacer" style={{ background: "var(--c-blue)" }} id="ticker">
+      <div className="overflow-hidden ticker-spacer" style={{ background: "var(--c-ink)" }} id="ticker">
         <div className="flex py-2" style={{ width: "max-content", animation: "marquee 25s linear infinite" }}>
           {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
             <span key={i} className="text-white text-xs font-semibold mx-6 tracking-widest display-font whitespace-nowrap">
@@ -377,9 +377,9 @@ export default function Index() {
               ))}
             </ul>
 
-            <div className="flex items-center gap-2 rounded-xl px-4 py-2.5 mb-5 w-fit" style={{ background: "#f0fdf4", border: "1px solid #bbf7d0" }}>
+            <div className="flex items-center gap-2 px-4 py-2.5 mb-5 w-fit" style={{ background: "#fff0f0", border: "1px solid #ffb3b5", borderLeft: "3px solid var(--c-green)" }}>
               <Icon name="Gift" size={16} style={{ color: "var(--c-green)" }} />
-              <span className="text-sm"><strong style={{ color: "var(--c-green-dark)" }}>Скидка 10%</strong> на первый заказ для новых клиентов</span>
+              <span className="text-sm"><strong style={{ color: "var(--c-green)" }}>Скидка 10%</strong> на первый заказ для новых клиентов</span>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
@@ -394,7 +394,7 @@ export default function Index() {
 
           {/* Right — Gallery */}
           <div>
-            <div className="relative overflow-hidden rounded-2xl" style={{ aspectRatio: "4/3", boxShadow: "0 12px 40px rgba(0,0,0,0.13)" }}>
+            <div className="relative overflow-hidden" style={{ aspectRatio: "4/3", boxShadow: "0 8px 32px rgba(0,0,0,0.15)" }}>
               {GALLERY_IMGS.map((g, i) => (
                 <img key={i} src={g.url} alt={g.label}
                   className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
@@ -438,9 +438,9 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {[
-              { icon: "Zap", pain: "Нужно срочно к выставке, а предыдущий подрядчик подвёл", solution: "Перепечатаем тираж за 2–3 дня. Принимаем макет до 12:00 — на следующий день в работе. Своя доставка по Москве.", color: "#fef3c7", accent: "#d97706" },
-              { icon: "ShieldCheck", pain: "Боюсь получить брак, а тираж нужен точно ровный", solution: "Закладываем +2% к тиражу автоматически. Вы получаете заказанное количество или больше — без доплат.", color: "#f0fdf4", accent: "#16a34a" },
-              { icon: "Eye", pain: "Хочу увидеть качество до оплаты всего тиража", solution: "Приезжайте к нам на производство — посмотрите образцы и утвердите тестовый тираж. Для новых клиентов бесплатно.", color: "#eff6ff", accent: "#2563eb" },
+              { icon: "Zap", pain: "Нужно срочно к выставке, а предыдущий подрядчик подвёл", solution: "Перепечатаем тираж за 2–3 дня. Принимаем макет до 12:00 — на следующий день в работе. Своя доставка по Москве.", color: "#fff0f0", accent: "#dc2026" },
+              { icon: "ShieldCheck", pain: "Боюсь получить брак, а тираж нужен точно ровный", solution: "Закладываем +2% к тиражу автоматически. Вы получаете заказанное количество или больше — без доплат.", color: "#f5f5f5", accent: "#111111" },
+              { icon: "Eye", pain: "Хочу увидеть качество до оплаты всего тиража", solution: "Приезжайте к нам на производство — посмотрите образцы и утвердите тестовый тираж. Для новых клиентов бесплатно.", color: "#fff0f0", accent: "#dc2026" },
             ].map((c, i) => (
               <div key={i} className="card-light p-6">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{ background: c.color }}>
@@ -558,7 +558,7 @@ export default function Index() {
                   <img src={s.img} alt={s.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,31,46,0.65) 0%, transparent 60%)" }} />
                   <span className="absolute bottom-3 left-4 display-font font-bold text-xl text-white">{s.title}</span>
-                  <span className="absolute top-3 right-3 flex items-center gap-1 text-white text-xs px-2 py-1 rounded-full" style={{ background: "rgba(59,91,219,0.82)" }}>
+                  <span className="absolute top-3 right-3 flex items-center gap-1 text-white text-xs px-2 py-1 rounded-full" style={{ background: "rgba(220,32,38,0.88)" }}>
                     <Icon name="Images" size={12} /> Примеры
                   </span>
                 </div>
@@ -637,16 +637,16 @@ export default function Index() {
           <div className="flex items-center" style={{ width: "max-content", animation: "marquee 35s linear infinite" }}>
             {[...Array(2)].map((_, rep) => (
               [
-                { name: "АШАН", color: "#e8380d" },
-                { name: "СБЕР", color: "#21a038" },
-                { name: "М.ВИДЕО", color: "#eb212e" },
-                { name: "ЛЕНТА", color: "#ef3124" },
-                { name: "РОСТЕЛЕКОМ", color: "#0067b1" },
-                { name: "ЭВАЛАР", color: "#005baa" },
-                { name: "РЖД", color: "#cc0000" },
-                { name: "АЭРОФЛОТ", color: "#00539f" },
-                { name: "ГАЗПРОМ", color: "#0053a0" },
-                { name: "ВТБ", color: "#005896" },
+                { name: "АШАН", color: "#111" },
+                { name: "СБЕР", color: "#111" },
+                { name: "М.ВИДЕО", color: "#dc2026" },
+                { name: "ЛЕНТА", color: "#dc2026" },
+                { name: "РОСТЕЛЕКОМ", color: "#111" },
+                { name: "ЭВАЛАР", color: "#111" },
+                { name: "РЖД", color: "#dc2026" },
+                { name: "АЭРОФЛОТ", color: "#111" },
+                { name: "ГАЗПРОМ", color: "#111" },
+                { name: "ВТБ", color: "#dc2026" },
               ].map((p, i) => (
                 <div key={`${rep}-${i}`} className="flex-shrink-0 mx-7 flex items-center justify-center"
                   style={{ height: 44 }}>
@@ -769,7 +769,7 @@ export default function Index() {
               </div>
             ))}
           </div>
-          <div className="rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-4" style={{ background: "var(--c-blue)" }}>
+          <div className="p-5 flex flex-col sm:flex-row items-center gap-4" style={{ background: "var(--c-ink)" }}>
             <Icon name="Shield" size={28} style={{ color: "rgba(255,255,255,0.8)", flexShrink: 0 }} />
             <div>
               <div className="font-bold text-white text-sm mb-0.5">Резервное оборудование</div>
@@ -807,8 +807,8 @@ export default function Index() {
               <div key={i} className="card-light p-5 flex flex-col gap-3">
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full flex items-center justify-center display-font font-bold text-base text-white flex-shrink-0"
-                      style={{ background: "var(--c-blue)" }}>
+                    <div className="w-10 h-10 flex items-center justify-center display-font font-bold text-base text-white flex-shrink-0"
+                      style={{ background: "var(--c-ink)" }}>
                       {r.name[0]}
                     </div>
                     <div>
@@ -874,7 +874,7 @@ export default function Index() {
             </p>
             {consultDone ? (
               <div className="card-light p-8 text-center">
-                <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: "#f0fdf4" }}>
+                <div className="w-14 h-14 flex items-center justify-center mx-auto mb-3" style={{ background: "#fff0f0" }}>
                   <Icon name="CheckCircle" size={32} style={{ color: "var(--c-green)" }} />
                 </div>
                 <h3 className="display-font font-bold text-xl mb-1.5" style={{ color: "var(--c-ink)" }}>Спасибо за заявку!</h3>
@@ -968,7 +968,7 @@ export default function Index() {
       </div>
 
       {/* ========== FOOTER ========== */}
-      <footer className="py-4 px-4 lg:px-6" style={{ background: "var(--c-ink)" }}>
+      <footer className="py-4 px-4 lg:px-6" style={{ background: "var(--c-ink)", borderTop: "4px solid var(--c-green)" }}>
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>© 2026 ПК Запад · Все права защищены</div>
         </div>
@@ -990,7 +990,7 @@ export default function Index() {
             <div className="px-6 py-5">
               {cbDone ? (
                 <div className="text-center py-4">
-                  <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: "#f0fdf4" }}>
+                  <div className="w-14 h-14 flex items-center justify-center mx-auto mb-3" style={{ background: "#fff0f0" }}>
                     <Icon name="CheckCircle" size={32} style={{ color: "var(--c-green)" }} />
                   </div>
                   <h3 className="display-font font-bold text-xl mb-2" style={{ color: "var(--c-ink)" }}>Спасибо за заявку!</h3>
@@ -1060,7 +1060,7 @@ export default function Index() {
               {quizDone ? (
                 <div className="py-2">
                   <div className="text-center mb-5">
-                    <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: "#f0fdf4" }}>
+                    <div className="w-14 h-14 flex items-center justify-center mx-auto mb-3" style={{ background: "#fff0f0" }}>
                       <Icon name="CheckCircle" size={32} style={{ color: "var(--c-green)" }} />
                     </div>
                     <h3 className="display-font font-bold text-xl mb-2" style={{ color: "var(--c-ink)" }}>Спасибо за заявку!</h3>
